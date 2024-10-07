@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --background: #ebebeb;
+  --foreground: #232323;
+  --border: #b4b4b4;
+  --font-sans: 'neue-haas-grotesk-display';
+}
+
+html {
+  font-size: 15px;
+  line-height: 1;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  letter-spacing: 0.01em;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1rem;
+  border-radius: 100vw;
+  border-width: 2px;
+  transition-duration: 300ms;
+
+  &:hover {
+    background-color: var(--border);
+  }
+}
